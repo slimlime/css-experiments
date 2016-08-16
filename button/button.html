@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Button</title>
+
+    <style>
+        span.outer {
+            border: 2px solid #878787;
+            display: inline-block;
+            border-radius: 20px;
+            box-shadow: 0px 3px 2px -2px #666;
+        }
+
+        span.inner {
+            border: 1px solid #fff;
+            background-color: #C9C9C9;
+            border-radius: 20px;
+            padding: 8px 10px 10px 10px;
+            box-sizing: border-box;
+            display: inline-block;
+            background: linear-gradient(to bottom, #B8B8B8, #dedede);
+        }
+
+        button:before,
+        button:after {
+            content: "\2605";
+            color: #86878B;
+            font-size: 28px;
+            padding: 5px;
+        }
+
+        button {
+            text-transform: uppercase;
+            color: #525557;
+            font-weight: 700;
+            font-size: 26px;
+            border-radius: 10px;
+            padding: 12px 15px;
+            text-shadow: 0 1px 1px #eee;
+            background: linear-gradient(to bottom, #eaeaea, #aeaeae);
+            box-shadow: 0px 3px 10px -2px #000;
+            border: none;
+            border: 1px solid #C4C4C4;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Image VS CSS</h1>
+<h4>may not work on all browsers...</h4>
+<p>
+    <span class="outer">
+        <span class="inner">
+            <button>Checkout</button>
+        </span>
+    </span>
+</p>
+
+<div>
+    <img src="button.jpeg" alt="button">
+</div>
+
+</body>
+</html>
